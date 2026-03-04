@@ -4,20 +4,20 @@
 class Traces < Formula
   desc "Traces CLI"
   homepage "https://github.com/market-dot-dev/traces"
-  version "0.3.14"
+  version "0.3.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.14/traces-darwin-x64"
-      sha256 "945db4a116a5f82bbc3819afff8f74763a3c5ca203c6373da71fbc67017acbad"
+      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.15/traces-darwin-x64"
+      sha256 "e78394f08a93f8c80755c7bf5383aea67a90dc2bd32607eb4a9eaaaf07cf722b"
 
       def install
         bin.install "traces-darwin-x64" => "traces"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.14/traces-darwin-arm64"
-      sha256 "c00274344c34ce56abb18badc07a662d9d3a53b0c6ce4377a0bcef051efa5fee"
+      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.15/traces-darwin-arm64"
+      sha256 "607a2bb191c17e0ddb4e16c660707de6a19db1a89cd06907dc703c029122c9f4"
 
       def install
         bin.install "traces-darwin-arm64" => "traces"
@@ -27,15 +27,15 @@ class Traces < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.14/traces-linux-x64"
-      sha256 "5e82c2ba82da81e152d82e5029138e67c2f786ffd7bcd19607113867a12ae0bc"
+      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.15/traces-linux-x64"
+      sha256 "d6f3649578d20bf6688f4fcd6d94b219894d0e83bc6b228951d874e7e235c319"
       def install
         bin.install "traces-linux-x64" => "traces"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.14/traces-linux-arm64"
-      sha256 "3bbe06e9fdd86473f96d2b4e86134319d6ae2747e8993435d29cb359c0150513"
+      url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.3.15/traces-linux-arm64"
+      sha256 "c25bfd066581408f1c3bda6986736bd3abe81c9a9540276cfc327ba8d5de29e4"
       def install
         bin.install "traces-linux-arm64" => "traces"
       end
