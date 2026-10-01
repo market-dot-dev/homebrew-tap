@@ -9,7 +9,7 @@ class Traces < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.6.35/traces-darwin-x64"
-      sha256 "8c73ada739e9daf00d2a761f69b717a55296e67d746cdde1ff58781a54e447ab"
+      sha256 "e30cda65ce3acf633ca5777655d1787b170cfeb08bf0fde64b4b5c175ec81251"
 
       def install
         bin.install "traces-darwin-x64" => "traces"
@@ -17,7 +17,7 @@ class Traces < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.6.35/traces-darwin-arm64"
-      sha256 "1715f5546b27b0f932a2231482602d5c58848cb51c74adf5cd8c49a0eb24a5ec"
+      sha256 "f76f4b9d16b40ed0b4c8ba56485aa6f95a5c3714bc8db6202518e9d7708616b0"
 
       def install
         bin.install "traces-darwin-arm64" => "traces"
@@ -28,14 +28,14 @@ class Traces < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.6.35/traces-linux-x64"
-      sha256 "07865c2f0feed9c9ebead1bc02c5356ea0737a8f2fb9321adbe8560e2aad712b"
+      sha256 "791451bb6e8eeac226e12e92910f0ef257a4327b12ef1b84a750a5ff9ee57503"
       def install
         bin.install "traces-linux-x64" => "traces"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/market-dot-dev/traces-binaries/releases/download/v0.6.35/traces-linux-arm64"
-      sha256 "c71d33479f7b7076e8b3b21b5ce6319c436f8997084c827ceb050d284afa993f"
+      sha256 "0cd59a5e337f03f57fabbfd8f8f8bbf61a5cc059a32aad608cd998792f461622"
       def install
         bin.install "traces-linux-arm64" => "traces"
       end
